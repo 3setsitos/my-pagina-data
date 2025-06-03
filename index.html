@@ -2,94 +2,150 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Mí</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jackson Cueva-Big Data</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
     }
+
     header {
-      background-color: #333;
+      background-color: #2c3e50;
       color: white;
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
+
     .perfil {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
     }
+
     .perfil img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     .contenido {
       max-width: 800px;
-      margin: 20px auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
+    .contenido h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .contenido p {
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
     footer {
-      background-color: #444;
+      background-color: #34495e;
       color: white;
-      padding: 1rem;
+      padding: 1.5rem;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
+
+    .contacto a {
+      color: #1abc9c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contacto a:hover {
+      color: #16a085;
+    }
+
+    .sugerencias {
+      margin-top: 10px;
+    }
+
+    .sugerencias label {
+      margin-right: 10px;
+    }
+
     .sugerencias input[type="text"] {
-      width: 200px;
-      padding: 5px;
-      border-radius: 4px;
+      width: 220px;
+      padding: 7px;
+      border-radius: 5px;
       border: none;
+      margin-right: 10px;
     }
+
     .sugerencias button {
-      padding: 5px 10px;
-      border: none;
-      background-color: #28a745;
+      padding: 7px 14px;
+      background-color: #1abc9c;
       color: white;
-      border-radius: 4px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
     .sugerencias button:hover {
-      background-color: #218838;
+      background-color: #16a085;
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sugerencias {
+        margin-top: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Sobre Mí</h1>
-</header>
+  <header>
+    <h1>Sobre Mí</h1>
+  </header>
 
-<div class="perfil">
-  <img src="foto uide.jpg" alt="Mi foto de perfil">
-</div>
+  <div class="perfil">
+   
 
-<div class="contenido">
-  <h2>Hola, soy un profesional de negocios internacionales</h2>
-  <p>Tengo experiencia en ventas y me apasiona el trato con las personas. Actualmente estoy estudiando la carrera de Negocios Internacionales.</p>
-  <p>Tengo un nivel de inglés B2 que me permite comunicarme de forma efectiva en ambientes profesionales.</p>
-  <p>Actualmente me estoy preparando en herramientas de análisis como <strong>RStudio</strong> y en programación con el lenguaje <strong>Python</strong>, buscando ampliar mis competencias técnicas.</p>
-</div>
-
-<footer>
-  <div class="contacto">
-    <a href="https://wa.me/593992676068" target="_blank" style="color: white; text-decoration: none;">💬 Contactar por WhatsApp</a>
   </div>
-  <div class="sugerencias">
-    <label for="sugerencia">Sugerencias:</label>
-    <input type="text" id="sugerencia" maxlength="200" placeholder="Escribe tu sugerencia...">
-    <button onclick="alert('¡Gracias por tu sugerencia!')">Enviar</button>
+
+  <div class="contenido">
+    <h2>¡Hola! 👋</h2>
+    <p>Soy un profesional en formación en <strong>Negocios Internacionales</strong> con experiencia en <strong>ventas</strong>. Me apasiona el contacto con las personas y el crecimiento constante.</p>
+    <p>Tengo un nivel de <strong>inglés B2</strong>, lo cual me permite desenvolverme en entornos laborales con confianza.</p>
+    <p>Actualmente me estoy capacitando en <strong>RStudio</strong> y programación en <strong>Python</strong>, con el objetivo de integrar el análisis de datos en mi perfil profesional.</p>
   </div>
-</footer>
+  <img src="https://raw.githubusercontent.com/tuusuario/tu-repositorio/main/imagenes/mi-foto.jpg" alt="Mi foto de perfil">
+  <footer>
+    <div class="contacto">
+      <a href="https://wa.me/1234567890" target="_blank">💬 Habla conmigo por WhatsApp</a>
+    </div>
+    <div class="sugerencias">
+      <label for="sugerencia">Sugerencias:</label>
+      <input type="text" id="sugerencia" maxlength="200" placeholder="Escribe una sugerencia...">
+      <button onclick="alert('¡Gracias por tu sugerencia!')">Enviar</button>
+    </div>
+  </footer>
 
 </body>
 </html>
 
+  
 
