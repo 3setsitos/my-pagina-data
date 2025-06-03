@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Paguinas Html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .perfil {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .perfil img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .contenido {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #444;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .sugerencias input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      border-radius: 4px;
+      border: none;
+    }
+    .sugerencias button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .sugerencias button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
-<h1>¡Hola, mundo!</h1>
-<p>Esta es mi primera p ́agina web publicada con GitHub Pages.</p>
+
+<header>
+  <h1>Sobre Mí</h1>
+</header>
+
+<div class="perfil">
+  <img src="tu-imagen.jpg" alt="Mi foto de perfil">
+</div>
+
+<div class="contenido">
+  <h2>Hola, soy un profesional de negocios internacionales</h2>
+  <p>Tengo experiencia en ventas y me apasiona el trato con las personas. Actualmente estoy estudiando la carrera de Negocios Internacionales.</p>
+  <p>Tengo un nivel de inglés B2 que me permite comunicarme de forma efectiva en ambientes profesionales.</p>
+  <p>Actualmente me estoy preparando en herramientas de análisis como <strong>RStudio</strong> y en programación con el lenguaje <strong>Python</strong>, buscando ampliar mis competencias técnicas.</p>
+</div>
+
+<footer>
+  <div class="contacto">
+    <a href="https://wa.me/1234567890" target="_blank" style="color: white; text-decoration: none;">💬 Contactar por WhatsApp</a>
+  </div>
+  <div class="sugerencias">
+    <label for="sugerencia">Sugerencias:</label>
+    <input type="text" id="sugerencia" maxlength="200" placeholder="Escribe tu sugerencia...">
+    <button onclick="alert('¡Gracias por tu sugerencia!')">Enviar</button>
+  </div>
+</footer>
+
 </body>
 </html>
+
 
